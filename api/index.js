@@ -14,6 +14,7 @@ export default async (req, res) => {
 
         if (req.method === 'POST') {
 			const doc = req.body.doc;
+			console.log(doc);
 			const clone = structuredClone(doc);
 			delete clone._id;
 
